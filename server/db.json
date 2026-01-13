@@ -1,0 +1,47 @@
+{
+  "users": [
+    { "id": 1, "name": "João Silva", "role": "APPROVER" },
+    { "id": 2, "name": "Maria Souza", "role": "REQUESTER" },
+    { "id": 3, "name": "Pedro Bastos", "role": "ADMIN" }
+  ],
+
+  "processes": [
+    {
+      "id": 123,
+      "name": "Compra TI",
+      "description": "Aquisição de equipamentos",
+      "status": "IN_APPROVAL",
+      "sla": 2,
+      "currentStep": 3,
+      "createdAt": "2026-01-10",
+      "responsibleId": 1
+    }
+  ],
+
+  "steps": [
+    { "id": 1, "processId": 123, "order": 1, "name": "Criado" },
+    { "id": 2, "processId": 123, "order": 2, "name": "Análise" },
+    { "id": 3, "processId": 123, "order": 3, "name": "Aprovação" },
+    { "id": 4, "processId": 123, "order": 4, "name": "Finalização" }
+  ],
+
+  "approvals": [
+    {
+      "id": 1,
+      "processId": 123,
+      "stepId": 3,
+      "assignedTo": 1,
+      "status": "PENDING"
+    }
+  ],
+
+  "comments": [
+    {
+      "id": 1,
+      "processId": 123,
+      "authorId": 1,
+      "message": "Aguardando validação do gestor",
+      "createdAt": "2026-01-11"
+    }
+  ]
+}
