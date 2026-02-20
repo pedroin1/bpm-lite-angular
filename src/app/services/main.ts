@@ -3,9 +3,9 @@ import { DestroyRef, inject, Injectable } from '@angular/core';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { User } from '@entities/user/user';
 import { UserDTO } from '@entities/user/user.dto';
+import { environment } from '@environments/environment.development';
+import { userMapperArray } from '@mappers/user-mapper';
 import { BehaviorSubject, catchError, map, Subject, throwError } from 'rxjs';
-import { environment } from 'src/environments/environment.development';
-import { userMapperArray } from '../mappers/user-mapper';
 
 @Injectable({
   providedIn: 'root',

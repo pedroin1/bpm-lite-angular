@@ -16,10 +16,10 @@
     "module": "preserve",
     "baseUrl": "./",
     "paths": {
+      "@environments/*": ["src/environments/*"],
       "@components/*": ["src/app/components/*"],
       "@constants/*": ["src/app/constants/*"], // Mantive o erro de digitação da sua pasta caso prefira
       "@entities/*": ["src/app/entities/*"],
-      "@environments/*": ["src/environments/*"],
       "@pages/*": ["src/app/pages/*"],
       "@pipes/*": ["src/app/pipes/*"],
       "@services/*": ["src/app/services/*"],
