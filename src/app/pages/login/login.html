@@ -1,2 +1,23 @@
-<p>login works!</p>
-<app-input></app-input>
+<div class="login">
+  <div class="login__box">
+    <div class="login__logo"><strong>LOGO</strong> EMPRESA</div>
+    <form [formGroup]="form()" class="login__form">
+      <app-input
+        label="Email"
+        placeholder="Digite seu email"
+        [control]="this.form().controls.email"
+        [errorMessages]="errorMessages.email"
+      ></app-input
+      ><app-input
+        label="Senha"
+        placeholder="***********"
+        type="password"
+        [maxLength]="passwordMaxLength"
+        [control]="this.form().controls.password"
+        [errorMessages]="errorMessages.password"
+      ></app-input>
+      <button class="login__button">Entrar</button>
+      <a href="">Esqueci minha senha</a>
+    </form>
+  </div>
+</div>
