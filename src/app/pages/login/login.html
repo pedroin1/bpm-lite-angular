@@ -19,5 +19,14 @@
       <button class="login__button">Entrar</button>
       <a href="">Esqueci minha senha</a>
     </form>
+    @for (item of mainService.loadedUsers$ | async; track $index) {
+    <p>{{ item.id }}</p>
+    } @for (comment of mainService.loadedComments$ | async; track $index) {
+    <p>{{ comment.message }}</p>
+    <p>{{ comment.createdAt }}</p>
+    <p>{{ comment.authorId }}</p>
+    <p>{{ comment.processId }}</p>
+    <p>{{ comment.id }}</p>
+    }
   </div>
 </div>
