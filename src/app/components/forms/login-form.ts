@@ -1,6 +1,6 @@
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { LOGIN_FORM_PASSWORD_MAX_LENGTH } from '@app/constans/login-form';
-import { LoginForm } from '@app/entities/login-form';
+import { LOGIN_FORM_PASSWORD_MAX_LENGTH } from '@constants/login-form';
+import { LoginForm } from '@entities/login-form';
 
 export const createLoginForm = (): FormGroup<LoginForm> => {
   return new FormGroup<LoginForm>({

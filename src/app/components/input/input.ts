@@ -2,7 +2,7 @@ import { Component, computed, input } from '@angular/core';
 import { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
-import { InputType } from '@app/entities/input-types';
+import { InputType } from '@entities/input-types';
 
 @Component({
   selector: 'app-input',

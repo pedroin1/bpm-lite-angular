@@ -16,13 +16,13 @@
     "module": "preserve",
     "baseUrl": "./",
     "paths": {
-      "@app/*": ["./src/app/*"],
       "@components/*": ["src/app/components/*"],
+      "@constants/*": ["src/app/constants/*"], // Mantive o erro de digitação da sua pasta caso prefira
+      "@entities/*": ["src/app/entities/*"],
+      "@environments/*": ["src/app/environments/*"],
       "@pages/*": ["src/app/pages/*"],
       "@pipes/*": ["src/app/pipes/*"],
-      "@entities/*": ["src/app/entities/*"],
-      "@constants/*": ["src/app/constants/*"],
-      "@env/*": ["src/app/environments/*"]
+      "@services/*": ["src/app/services/*"]
     }
   },
   "angularCompilerOptions": {

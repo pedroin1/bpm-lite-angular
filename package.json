@@ -8,7 +8,8 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "server": "npx json-server --watch server/db.json --port 3000",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "prepare": "husky install"
   },
   "prettier": {
     "printWidth": 100,
@@ -42,10 +43,17 @@
     "@angular/compiler-cli": "^21.0.0",
     "angular-eslint": "21.2.0",
     "eslint": "^9.39.2",
+    "husky": "^8.0.0",
     "jsdom": "^27.1.0",
     "json-server": "^1.0.0-beta.3",
+    "lint-staged": "^16.2.7",
     "typescript": "~5.9.2",
     "typescript-eslint": "8.50.1",
     "vitest": "^4.0.8"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "eslint --fix"
+    ]
   }
 }
