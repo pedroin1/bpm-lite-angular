@@ -1,62 +1,66 @@
+@use 'variables' as var;
+@use 'borders' as borders;
+@use 'colors' as colors;
+
 .login {
-  height: 100vh;
+  height: inherit;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #e9edf2;
+  margin-top: var.$spacing-inline-xl;
 
   &__box {
     width: 100%;
-    max-width: 900px;
-    background: #cfd9e6; // azul claro da imagem
-    padding: 80px 0;
-    border-radius: 8px;
+    max-width: 800px;
+    background-color: colors.$color-primary-04;
+    padding: var.$spacing-stack-3xl 0;
+    border-radius: borders.$radius-md;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
-    gap: 40px;
+    gap: var.$spacing-stack-xl var.$spacing-inline-xl;
   }
 
   &__logo {
-    font-size: 28px;
-    color: #2f3e4f;
+    font-size: var.$font-size-2xl;
+    color: colors.$color-primary-05;
   }
 
   &__form {
     width: 400px;
-    background: #ffffff;
-    padding: 40px;
-    border-radius: 6px;
+    background: colors.$color-white;
+    padding: var.$spacing-stack-xl var.$spacing-inline-xl;
+    border-radius: borders.$radius-md;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: var.$spacing-stack-lg;
   }
 
   &__button {
     width: 100%;
     height: 48px;
-    background: #2f6ebc;
+    background: colors.$color-primary-01;
     border: none;
-    border-radius: 4px;
-    color: white;
-    font-size: 18px;
+    border-radius: borders.$radius-sm;
+    color: colors.$color-white;
+    font-size: var.$font-size-md;
     cursor: pointer;
 
     &:hover {
-      background: #24579b;
+      background: colors.$color-primary-02;
     }
   }
 
   &__forgot {
     text-align: center;
-    font-size: 14px;
-    color: #5a6d82;
+    font-size: var.$font-size-sm;
+    color: colors.$color-primary-06;
     cursor: pointer;
   }
 }

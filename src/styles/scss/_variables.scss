@@ -1,0 +1,60 @@
+/* ================================================= */
+/* 🔤 FONT SIZES                                    */
+/* ================================================= */
+
+$font-size-xxs: 10px;
+$font-size-xs: 12px;
+$font-size-sm: 14px;
+$font-size-md: 16px;
+$font-size-lg: 18px;
+$font-size-xl: 24px;
+$font-size-2xl: 32px;
+$font-size-3xl: 40px;
+
+/* ================================================= */
+/* 🔤 FONT WEIGHTS                                  */
+/* ================================================= */
+
+$font-weight-thin: 100;
+$font-weight-extralight: 200;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-extrabold: 800;
+$font-weight-black: 900;
+
+
+/* ================================================= */
+/* 📏 SPACING (SCSS VARIABLES)                      */
+/* ================================================= */
+
+/* Stack = Vertical spacing (top / bottom / column gap) */
+$spacing-stack-xxs: 4px;
+$spacing-stack-xs: 8px;
+$spacing-stack-sm: 12px;
+$spacing-stack-md: 16px;
+$spacing-stack-lg: 24px;
+$spacing-stack-xl: 32px;
+$spacing-stack-2xl: 48px;
+$spacing-stack-3xl: 64px;
+
+/* Inline = Horizontal spacing (left / right / row gap) */
+$spacing-inline-xxs: 4px;
+$spacing-inline-xs: 8px;
+$spacing-inline-sm: 12px;
+$spacing-inline-md: 16px;
+$spacing-inline-lg: 24px;
+$spacing-inline-xl: 32px;
+$spacing-inline-2xl: 48px;
+$spacing-inline-3xl: 64px;
+
+/* ================================================= */
+/* 📱 BREAKPOINTS                                   */
+/* ================================================= */
+
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;

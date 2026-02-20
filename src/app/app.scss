@@ -1,0 +1,28 @@
+@use 'colors' as colors;
+
+:host {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  background-color: colors.$color-primary-06;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  background: colors.$color-primary-06;
+}
+
+main {
+  display: block;
+  min-height: calc(100vh - 70px - 60px);
+}
