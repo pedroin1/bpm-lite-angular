@@ -5,11 +5,11 @@ import { createLoginForm } from '@components/forms/login-form';
 import { loginErrorMessages } from '@constants/login-form-error';
 import { LOGIN_FORM_PASSWORD_MAX_LENGTH } from '@constants/login-form';
 import { Main } from '@services/main';
-import { AsyncPipe } from '@angular/common';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-login',
-  imports: [Input, ReactiveFormsModule, AsyncPipe],
+  imports: [Input, ReactiveFormsModule, RouterLink],
   providers: [Main],
   templateUrl: './login.html',
   styleUrl: './login.scss',

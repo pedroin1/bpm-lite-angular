@@ -24,7 +24,10 @@
   }
 
   &__logo {
-    font-size: var.$font-size-2xl;
+    width: 500px;
+    height: 60px;
+    object-fit: contain;
+    object-position: center;
     color: colors.$color-primary-05;
   }
 
@@ -57,10 +60,14 @@
     }
   }
 
-  &__forgot {
+  &__forgot-password {
     text-align: center;
     font-size: var.$font-size-sm;
     color: colors.$color-primary-06;
     cursor: pointer;
+    &:hover {
+      color: colors.$color-primary-02;
+      text-decoration: underline;
+    }
   }
 }
